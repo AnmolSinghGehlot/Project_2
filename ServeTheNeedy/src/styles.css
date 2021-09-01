@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+html,
+body{
+    margin:0;
+    height: 100%;
+    
+}
+body{
+    margin:0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  
+   
+}
+
+.text-center{
+    text-align: center;
+}
+.ml20{
+    margin-left: 20pc !important;
+}
+.mr20{
+    margin-right: 20pc !important;
+}
+.mt20{
+    margin-top: 20pc !important;
+}
+.mb20{
+    margin-bottom: 20pc !important;
+}

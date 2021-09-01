@@ -1,0 +1,8 @@
+{
+    "/getdonations/*":{
+        "target":"http://localhost:8082/api/v1/getdonations",
+        "pathRewrite":{
+            "/getdonations/*":" "
+        }
+    }
+}

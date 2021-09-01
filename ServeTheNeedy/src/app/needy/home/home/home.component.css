@@ -1,0 +1,41 @@
+
+
+
+.money{
+    position:relative;
+    bottom:150px;
+    left:600px;
+   
+   
+} 
+.food{
+    position:relative;
+    bottom: 100px;
+    left:0px;
+
+} 
+
+
+.content{
+    padding:16px;
+}
+.content>mat-card{
+    width: 400px;
+}
+.other{
+    position:relative;
+    bottom: 250px;
+    left:600px;
+
+
+}
+
+.form{
+    position: relative;
+    bottom: 200px;
+
+}
+.need{
+    font-size: larger;
+    font-style: italic;
+}

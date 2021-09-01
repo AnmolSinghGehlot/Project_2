@@ -1,0 +1,48 @@
+.sidenav-container {
+  height: 100%;
+  background: rgb(67, 93, 109);
+  
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.btn{
+  position:relative;
+  left:1050px;
+ 
+}
+.color{
+  background-color:rgb(148, 151, 151);
+}
+
+.request{
+  position:relative;
+  left:20px;
+  bottom:-35px;
+
+}
+.itemreq{
+  position:relative;
+  left:30px;
+  font-size: larger;
+  font-weight: 500;
+  
+
+}
+.feedbackimg{
+  position:relative;
+  left:20px;
+  bottom: -82px;
+
+}
