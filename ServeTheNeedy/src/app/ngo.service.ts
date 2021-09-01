@@ -37,22 +37,22 @@ export class NgoService {
   }
 
   public updateMember(ngo: Ngo): Observable<Ngo> {
-    return this.http.put<Ngo>(this.API + '/Ngo//NgoMember/update', ngo)
-      .pipe(map((res: any) => {
-        return res;
-      }))d
+    return this.http.put<Ngo>(this.API + '/Ngo/NgoMember/update', ngo)
   }
 
-  public deleteMember(memberId: number): Observable<void> {
-    return this.http.delete<void>(this.API + '/NgoMember/delete/' + memberId)
+  public deleteMember(memberId: number) {
+    return this.http.delete<void>(this.API + '/Ngo/NgoMember/delete/' + memberId)
       .pipe(map((res: any) => {
         return res;
       }))
   }
 
-  NgoLogin(credentials: any): Observable<any> {
-    // console.log("Welcome" + ngo.memberAddress + " " + ngo.gender + " " + ngo.memberAge)
-    // return this.http.post<any>(this.loginUrl, ngo)
-    return this.http.post(this.loginUrl, credentials)
+  saveMemberData(data: any) {
+    console.log(data);
+    return this.http.post('http://localhost:8899/Ngo/NgoMember', data);
+  }
+
+  getCurrentData(memberId: any) {
+    return this.http.get<Ngo>(this.API + '/Ngo/NgoMember/' + memberId)
   }
 }

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,7 @@ import { RecipientComponent } from './recipient/recipient.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { MemberComponent } from './member/member.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,16 @@ import { MemberComponent } from './member/member.component';
     RecipientComponent,
     AboutUsComponent,
     FeedbackComponent,
-    MemberComponent
+    MemberComponent,
+    EditMemberComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

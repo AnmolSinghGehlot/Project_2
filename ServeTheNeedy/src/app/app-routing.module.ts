@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AppComponent } from './app.component';
 import { DonatorsComponent } from './donators/donators.component';
+import { EditMemberComponent } from './edit-member/edit-member.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ListMembersComponent } from './list-members/list-members.component';
 import { MemberComponent } from './member/member.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'Needy', component: RecipientComponent },
   { path: 'AboutUs', component: AboutUsComponent },
   { path: 'Feedback', component: FeedbackComponent },
-  { path: 'Member', component: MemberComponent }
+  { path: 'Member', component: MemberComponent },
+  { path: 'Edit/:id', component: EditMemberComponent }
 ];
 
 @NgModule({
