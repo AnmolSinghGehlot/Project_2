@@ -31,7 +31,7 @@ msg='';
        (       data) =>{
          
         console.log("response received");
-        this.route.navigate(['/']);
+        this.route.navigate(['/nav']);
       
        },
        ( error) => {

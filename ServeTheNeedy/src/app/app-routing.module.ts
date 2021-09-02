@@ -52,12 +52,14 @@ const routes: Routes = [
   },
 {
   path: 'nav',
-  component: MainNavComponent
+  component: MainNavComponent,
+  children:
+  [{path:'home', component:DonateditemComponent},
+{path:'notify', component: RequestsComponent},
+{path:'feedback',component: FeedbackComponent}]
+
 },
-{
-  path: '',
-  redirectTo:'/nav',pathMatch:'full'
-},
+
 
 ];
 
