@@ -6,10 +6,10 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar >Menu</mat-toolbar>
     <mat-nav-list class="menu">
-      <a  mat-list-item   routerLink="home">Request Items</a>
-      <a  mat-list-item   routerLink="notify">Notifications</a>
-      <a mat-list-item routerLink="items">Donated Items</a>
-      <a mat-list-item routerLink="feedback">Feedback</a>
+      <a  mat-list-item  routerLink="home">Request Items</a>
+      <a  mat-list-item  routerLink="notify">Notifications</a>
+      <a mat-list-item  routerLink="items">Donated Items</a>
+      <a mat-list-item  routerLink="feedback">Feedback</a>
       
       
      
@@ -27,7 +27,7 @@
       </button>
       <span>ServeTheNeedy
         
-       <button class="btn">Logout</button>
+       <button class="btn" type="submit" (click)="clickme()">Logout</button>
       </span>
     </mat-toolbar>
     <!-- Add Content Here -->

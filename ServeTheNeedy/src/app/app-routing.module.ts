@@ -54,6 +54,10 @@ const routes: Routes = [
   path: 'nav',
   component: MainNavComponent
 },
+{
+  path: '',
+  redirectTo:'/nav',pathMatch:'full'
+},
 
 ];
 

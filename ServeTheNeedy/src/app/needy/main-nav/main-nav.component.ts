@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { SigninComponent } from 'src/app/pages/pages/signin/signin.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-nav',
@@ -17,6 +18,10 @@ export class MainNavComponent {
       shareReplay()
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver,private route: Router) {}
+
+  clickme(){
+    this.route.navigate(['/signin'])
+  }
 
 }
